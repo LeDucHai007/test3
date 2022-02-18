@@ -1,0 +1,29 @@
+body {
+    background: #c9ecee;
+    /* overflow-x: hidden; */
+}
+
+.slide-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin-left: 40%;
+    padding: 0;
+}
+
+.slider {
+    width: 500px;
+    height: 800px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 800%;
+    height: 1000px;
+    display: flex;
+}
+
+.slides img {
+    width: 500px;
+}

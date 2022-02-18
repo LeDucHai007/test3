@@ -1,0 +1,36 @@
+body {
+    background: #c9ecee;
+    /* overflow-x: hidden; */
+}
+
+.slide-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin-left: 40%;
+    padding: 0;
+    background: red;
+}
+
+.slider {
+    width: 600px;
+    height: 800px;
+    overflow: hidden;
+    background: green;
+}
+
+.slides {
+    width: 800%;
+    height: 1000px;
+    display: flex;
+    background: yellow;
+}
+
+.slides input {
+    display: none;
+}
+
+.slides img {
+    width: 500px;
+}

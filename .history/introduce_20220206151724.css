@@ -1,0 +1,147 @@
+body {
+  background: #c9ecee;
+  overflow-x: hidden;
+}
+
+.slide-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin-left: 50%;
+}
+
+.slider {
+  width: 470px;
+  height: 950px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.slides {
+  width: 700%;
+  height: 950px;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.slides img {
+  /* width: 70%; */
+  height: 70%;
+  border-radius: 12px;
+}
+
+.slide {
+  width: 20%;
+  transition: 1s;
+}
+
+.navigation-manual {
+  position: absolute;
+  width: 500px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 2px solid #c9ecee;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 30px;
+}
+
+.manual-btn:hover {
+  background: #a8d3da;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+  margin-left: -14.35%;
+}
+
+#radio3:checked ~ .first {
+  margin-left: -33.295%;
+}
+
+#radio4:checked ~ .first {
+  margin-left: -59.9%;
+}
+
+#radio5:checked ~ .first {
+  margin-left: -80%;
+}
+
+#radio6:checked ~ .first {
+  margin-left: -100%;
+}
+
+#radio7:checked ~ .first {
+  margin-left: -120%;
+}
+
+#radio8:checked ~ .first {
+  margin-left: -140%;
+}
+
+.navigation-auto {
+  position: absolute;
+  display: flex;
+  width: 500px;
+  justify-content: center;
+  margin-top: 610px;
+}
+
+.navigation-auto div {
+  border: 2px solid #c9ecee;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+  margin-right: 30px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+  background: #c9ecee;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+  background: #c9ecee;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+  background: #c9ecee;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+  background: #c9ecee;
+}
+
+#radio5:checked ~ .navigation-auto .auto-btn5 {
+  background: #c9ecee;
+}
+
+#radio6:checked ~ .navigation-auto .auto-btn6 {
+  background: #c9ecee;
+}
+
+#radio7:checked ~ .navigation-auto .auto-btn7 {
+  background: #c9ecee;
+}
+
+#radio8:checked ~ .navigation-auto .auto-btn8 {
+  background: #c9ecee;
+}

@@ -1,0 +1,168 @@
+:root {
+    --clr-neutral-900: hsl(210, 17%, 9%);
+    --clr-neutral-100: hsl(0, 0%, 100%);
+    --clr-accent-400: hsl(142, 90%, 61%);
+    --clr-neon: hsl(317 100% 54%);
+    --clr-bg: hsl(323 32% 16%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.body-card {
+    /* display: grid;
+    min-height: 100vh;
+    place-items: center;
+    display: inline-block;
+    line-height: 1.6;
+    background: var(--clr-neutral-900);
+    font-family: "poppins", sans-serif;
+    border-radius: 1rem;
+    padding-right: 15em; */
+}
+
+.card {
+    color: var(--clr-neutral-100);
+    /* background-image: url(han.png); */
+    background-image: url(koi.jpg);
+    background-size: cover;
+    padding: 10rem 0 0;
+    max-width: 35ch;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: transform 500ms ease;
+}
+
+.card:hover,
+.card:focus-within {
+    transform: scale(1.05);
+    /* transition-delay: 500ms; */
+}
+
+.card-content {
+    --padding: 1.5rem;
+    padding: var(--padding);
+    background: linear-gradient( hsl(0 0% 0%/0), hsl(20 0% 0%/0.3) 10%, hsl(0 0% 0%/1));
+    transform: translateY(75%);
+    transition: transform 500ms ease;
+}
+
+.card:hover .card-content,
+.card:focus-within .card-content {
+    transform: translateY(0);
+    transition-delay: 500ms;
+}
+
+.card:focus-within .card-content {
+    transition-duration: 0ms;
+}
+
+.card-content>*:not(.card-title) {
+    opacity: 0;
+    transition: opacity 500ms linear;
+}
+
+.card:hover .card-content>*:not(.card-title) {
+    opacity: 1;
+    transition-delay: 800ms;
+}
+
+.card-title {
+    position: relative;
+    width: max-content;
+}
+
+.card-title::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: calc(100% + var(--padding));
+    left: calc(var(--padding) * -1);
+    bottom: -2px;
+    background: var(--clr-accent-400);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 500ms ease;
+}
+
+.card:hover .card-title::after {
+    transform: scaleX(1);
+}
+
+.card-body {
+    color: rgb(255 255 255/0.85);
+}
+
+.p1 {
+    display: block;
+}
+
+.p2 {
+    display: none;
+}
+
+.card-body-vn {
+    color: rgb(255 255 255/0.85);
+}
+
+.button {
+    cursor: pointer;
+    display: inline-block;
+    color: var(--clr-neon);
+    background: var(--clr-bg);
+    padding: 0.5em 1em;
+    border-radius: 0.25em;
+    font-size: 1.2rem;
+    font-weight: 800;
+    border: 2px solid var(--clr-neon);
+    border-radius: 0.35em;
+    text-shadow: 0 0 0.125em hsl(0 0% 100%/0.25), 0 0 0.25em currentColor;
+}
+
+.button:hover,
+.button:focus {
+    background-color: var(--clr-neutral-100);
+}
+
+.p1.Vietnamese {
+    display: none;
+}
+
+.p2.Vietnamese {
+    display: block;
+}
+
+.title-1 {
+    display: block;
+}
+
+.title-2 {
+    display: none;
+}
+
+.title-1.Vietnamese {
+    display: none;
+}
+
+.title-2.Vietnamese {
+    display: block;
+}
+
+#button-1 {
+    display: block;
+}
+
+#button-2 {
+    display: none;
+}
+
+#button-1.Vietnamese {
+    display: none;
+}
+
+#button-2.Vietnamese {
+    display: block;
+}

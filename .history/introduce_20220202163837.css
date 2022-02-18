@@ -1,0 +1,26 @@
+body {
+    background: #c9ecee;
+    overflow-x: hidden;
+}
+
+.slide-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin-left: 40%;
+    background: rebeccapurple;
+    padding: 0;
+}
+
+.slider {
+    width: 500px;
+    height: 800px;
+    background: red;
+}
+
+.slides {
+    width: 800%;
+    height: 800px;
+    display: flex;
+}
